@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="POC.EditingPhotoApp.Views.MainView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="MainView">
+    
+    <StackLayout
+        Padding="20">
+        <StackLayout
+            HorizontalOptions="Center"
+            Margin="0,50"
+            VerticalOptions="Center">
+            <Label
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalOptions="Center"
+                Text="Take a photo to edit" />
+            <Image
+                Margin="0,30"
+                Source="{Binding Photo}" />
+        </StackLayout>
+        <StackLayout
+            HorizontalOptions="Center"
+            Orientation="Horizontal"
+            VerticalOptions="EndAndExpand">
+            <Button
+                Command="{Binding TakePhotoCommand}"
+                Margin="5"
+                Text="Take a Photo" />
+            <Button
+                Command="{Binding OpenEditorCommand}"
+                Margin="5"
+                Text="Edit Photo" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
