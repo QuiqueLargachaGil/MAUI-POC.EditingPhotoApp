@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="POC.EditingPhotoApp.Views.EditingView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    Shell.NavBarIsVisible="False">
+
+    <Grid
+        HorizontalOptions="Center"
+        Padding="20"
+        RowDefinitions="auto,*,auto,*,Auto">
+        <Label
+            Grid.Row="0"
+            FontAttributes="Bold"
+            FontSize="20"
+            HorizontalOptions="Center"
+            Text="Let's draw!!!" />
+        <AbsoluteLayout
+            x:Name="Editor"
+            Grid.Row="1"
+            Margin="0,10,0,0">
+            <Image
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Aspect="AspectFill"
+                Source="{Binding PhotoToEdit}" />
+            <toolkit:DrawingView
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Transparent"
+                IsMultiLineModeEnabled="True"
+                LineColor="red"
+                LineWidth="3"
+                Lines="{Binding Lines}"/>
+        </AbsoluteLayout>
+        <Label
+            Grid.Row="2"
+            FontAttributes="Bold"
+            FontSize="20"
+            HorizontalOptions="Center"
+            Margin="0,20,0,0"
+            Text="Photo to Save:" />
+        <Image
+            Grid.Row="3"
+            Aspect="AspectFill"
+            Margin="0,0,0,20"
+            Source="{Binding PhotoToSave}"/>
+        <StackLayout
+            Grid.Row="4"
+            HorizontalOptions="CenterAndExpand"
+            Orientation="Horizontal"
+            VerticalOptions="EndAndExpand">
+            <Button
+                Command="{Binding CancelCommand}"
+                Margin="30,5"
+                Text="Cancel" />
+            <Button
+                Command="{Binding SaveCommand}"
+                Margin="30,5"
+                Text="Save" />
+        </StackLayout>
+    </Grid>    
+</ContentPage>
