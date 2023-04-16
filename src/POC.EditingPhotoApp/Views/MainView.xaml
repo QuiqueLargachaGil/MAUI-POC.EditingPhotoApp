@@ -17,6 +17,7 @@
                 HorizontalOptions="Center"
                 Text="Take a photo to edit" />
             <Image
+                HeightRequest="400"
                 Margin="0,30"
                 Source="{Binding Photo}" />
         </StackLayout>
