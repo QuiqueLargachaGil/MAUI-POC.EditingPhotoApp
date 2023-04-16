@@ -2,6 +2,8 @@
 
 EditingPhotoApp is a small POC developed with .Net MAUI to answer a question done in the comments of a [YouTube](https://www.youtube.com/watch?v=7rw13_a5GR0&lc=Ugylepp8e2gsyTsyy0h4AaABAg) video. Just take a photo, edit it painting directly with your finger over the screen and have our edited photo ready to work with: to be saved on a database or on your device, or whatever you might need to do with it
 
+**I hope you find it useful and don't hesitate to correct me for improving. Thank you!!**
+
 <br>
 <video width="240" height="320" controls>
     <source src="documentation/vid/demo.mp4" type="video/mp4">
