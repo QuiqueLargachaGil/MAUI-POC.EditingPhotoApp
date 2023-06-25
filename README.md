@@ -10,23 +10,25 @@ EditingPhotoApp is a small POC developed with .Net MAUI to answer a question don
 </video>
 <br><br>
 
-## Platforms
-
+### Platforms
 &#9745; Tested on Android device version 13 <br>
 &#9745; Tested on Android emulator version 11 (API 30) - Resolution: 1080 x 2220 440 dpi
 
-## Features
+### Features
 - .Net MAUI
 - .Net 7
 - .NET MAUI Community Toolkit DrawingView
 - MVVM
 
-## TO-DO
-
+### TO-DO
 Capture only partial screenshot from ViewModel. Currently, the screenshot is being taken from the code behind.
+
+### More information
+- Author: [Enrique Largacha Gil](https://github.com/QuiqueLargachaGil)
+- Source  code: https://bitbucket.org/studyingtechnology/longotodo/src/master/
+
 <br><br>
 ___
 
 ### Spanish
-
 EditingPhotoApp es una pequeña POC desarrollada con .Net MAUI para dar respuesta a una cuestión planteada en los comentarios de un vídeo en [YouTube](https://www.youtube.com/watch?v=7rw13_a5GR0&lc=Ugylepp8e2gsyTsyy0h4AaABAg). Simplemente, haz una foto, edítala pintando directamente sobre ella con el dedo y obtén la foto editada lista para trabajar, ya sea para guardarla en una base de datos, para guardarla en el dispositivo o cualquier cosa que puedas necesitar hacer con ella.
